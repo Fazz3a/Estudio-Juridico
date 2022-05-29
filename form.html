@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Lobster&family=Tiro+Devanagari+Sanskrit:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mystyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Registrese</title>
+</head>
+<body>
+    <header> 
+        <ul class="grid1">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./form.html">Registro</a></li>
+        </ul> 
+        <h1>Estudio Jurídico</h1>  
+</header>
+    <article><h2>Formulario De Registro</h2>
+        <form class="needs-validation" novalidate" action="" target="_blank" method="post">
+            <ul class="ulform" type="none">
+                <li>
+                    <label for="nombre">Nombre:</label> 
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese aqui su nombre"></li> <br>
+                    <div class="invalid-feedback">Ingrese aqui su nombre</div>
+                <li>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="appelido" id="appelido" placeholder="Ingrese aqui su apellido" maxlength="17">
+                    <div class="invalid-feedback">Ingrese aqui su appelido</div>
+                </li><br>
+                <li>
+                    <label for="direccion">Direccion:</label>
+                    <input type="text" name="direccion" id="direccion" placeholder="Ingrese su direccion aqui" maxlength="23">
+                </li><br>
+                <li>
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="edad" id="edad" min="18" max="100" maxlength="3" placeholder="Ingrese su edad">
+                </li><br>
+                <li>
+                    <label for="ciudad">Provincia/Ciudad:</label>
+                    <select name="ciudad" id="ciudad">
+                        <option>CABA</option>
+                        <option>Buenos Aires (Provincia)</option>
+                        <option>Córdoba</option>
+                        <option>Rosario</option>
+                        <option>Catamarca</option>
+                        <option>Chacho</option>
+                        <option>Chubut</option>
+                        <option >Corrientes</option>
+                        <option>Entre Ríos</option>
+                        <option>Formosa</option>
+                        <option>Jujuy</option>
+                        <option>La Pampa</option>
+                        <option>La Rioja</option>
+                        <option>Mendoza</option>
+                        <option>Misiones</option>
+                        <option>Neuquén</option>
+                        <option>Río Negro</option>
+                        <option>Salta</option>
+                        <option>San Juan</option>
+                        <option>San Luis</option>
+                        <option>Santa Cruz</option>
+                        <option>Santa Fe</option>
+                        <option>Santiago del Estero</option>
+                        <option>Tierra del Fuego</option>
+                        <option>Tucumán</option>
+                        <option>Ushuaia</option>
+                        <option>Otro:</option>
+                    </select>
+                </li><br>
+                <li>
+                    <label for="codigopostal">Codigo Postal:</label>
+                    <input type="text" name="codigopostal" id="codigopostal" placeholder="Ingrese su Codigo Postal" maxlength="4">
+                </li><br>
+                <li>
+                    <label for="fecha">Fecha de Nacimiento (mm/dd/yyyy)</label>
+                    <input type="date" name="fecha" id="fecha">
+                </li> <br>
+                <li>
+                    <label for="genero">Genero:</label>
+                    <input type="radio" name="genero" id="genero">Hombre
+                    <input type="radio" name="genero" id="genero">Mujer
+                    <input type="radio" name="genero" id="genero">Otro
+                </li><br>
+                <li>
+                    <label for="estudios">Estudios:</label>
+                    <input type="checkbox" name="primarios" id="estudios">Primarios
+                    <input type="checkbox" name="secundarios" id="estudios">Secundarios
+                    <input type="checkbox" name="terciarios" id="estudios">Terciarios
+                    <input type="checkbox" name="universitarios" id="estudios">Universitarios
+                    <input type="checkbox" name="otros" id="estudios">Otros
+                </li> <br>
+        <li>
+                    <label for="razon">Motivo de Contacto:</label>
+                    <select name="razon" id="razon">
+                    <option>Denuncia</option>
+                    <option>Denunciante</option>
+                    <option>Robo</option>
+                    <option>Hurto</option>
+                    <option>Agravio</option>
+                    <option>Otro/s</option>
+                </li> <br>
+                <li>
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Enviar">
+                </li>
+            </ul>
+        </form>
+    </article>
+    <footer>
+        <div>
+            <div class="delfo">
+                <ol>
+                    <li><p><i class='bx bxs-phone' style='color:#0030f9' ></i></i>Teléfono: +54 1140765024</p></li>
+                    <li><p><i class='bx bxs-envelope' style='color:#0030f9'></i>Email: <a class="uni" href="mailto:estudio_gonzalezmoreno@hotmail.com">estudio_gonzalezmoreno@hotmail.com</a></p></li>
+                    <li><p><i class='bx bxs-navigation' style='color:#0030f9'></i>Uruguay 703 - Esquina Viamonte</p></li>
+                    <li><i class='bx bx-copyright' style='color:#ffffff'></i>Derechos Reservados @2022</li>
+                </ol>
+            </div>
+        </div>
+    </footer>
+    <script src="./myjava.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
